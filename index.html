@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Coding Temple Form Assignment</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="A form with some random questions">
+    <meta name="author" content="Jared Wilson">
+</head>
+<body>
+<header>
+    <h1>Coding Temple Form Assignment</h1>
+</header>
+<fieldset>
+<form action="/submit" method="post">
+    <legend>Basic user information</legend>
+    
+    <br>
+
+    <label for="email">Email:</label>
+    <input type="email" id="email" name="email" placeholder="Enter your email" required aria-required="true">
+
+    <label for="favorite number">Favorite number:</label>
+    <input type="number" id="favorite number" name="favorite number" min="1" max="150" step="1">
+
+    <label for="birthdate">Birthdate:</label>
+    <input type="date" id="birthdate" name="birthdate">
+
+    <br>
+
+    <label for="rating">Rate my website:</label>
+    <input type="range" id="rating" name="rating" min="0" max="10" step="1" placeholder="0-10" oninput="this.nextElementSibling.value=this.value">
+    <output for="rating"></output>
+
+    <br>
+    <br>
+
+    <button type="reset" role="button">Reset</button>
+    <button type="submit" role="button">Submit</button>
+    
+</form>
+</fieldset>
+
+<fieldset>
+<form action="submit" method="post">
+
+    <legend>Programming information</legend>
+
+    <br>
+
+    <label for="language">Favorite programming language:</label>
+    <select name="language" id="language">
+        <option value="python">Python</option>
+        <option value="html">HTML</option>
+        <option value="java">Java</option>
+        <option value="c++">C++</option>
+        <option value="javascript">Javascript</option>
+        <option value="c#">C#</option>
+        <option value="sql">SQL</option>
+        <option value="swift">Swift</option>
+    </select>
+
+    <p>Select your proficiency level:</p>
+    <input type="radio" id="beginner" name="proficiency" value="Beginner">
+    <label for="beginner">Beginner</label>
+    <input type="radio" id="intermediate" name="proficiency" value="Intermediate">
+    <label for="intermediate">Intermediate</label>
+    <input type="radio" id="advanced" name="proficiency" value="Advanced">
+    <label for="advanced">Advanced</label>
+    <input type="radio" id="expert" name="proficiency" value="Expert">
+    <label for="expert">Expert</label>
+    <input type="radio" id="master" name="proficiency" value="Master">
+    <label for="master">Master</label>
+
+    <br>
+
+    <p>Select preferred development platform(s):</p>
+     <input type="checkbox" id="web" name="web" value="Web">
+     <label for="web">Web</label>
+     <input type="checkbox" id="mobile" name="mobile" value="Mobile">
+     <label for="mobile">Mobile</label>
+     <input type="checkbox" id="desktop" name="desktop" value="Desktop">
+     <label for="desktop">Desktop</label>
+
+     <br>
+     <br>
+
+     <button type="reset" role="button">Reset</button>
+     <button type="submit" role="button">Submit</button>
+
+
+</form>
+</fieldset>
+
+</body>
+</html>
